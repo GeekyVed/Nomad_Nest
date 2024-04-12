@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomad Nest</title>
+</head>
+
+<body>
+    <h3>Listings</h3>
+    <form action="/listings/new" method="get">
+        <button>Add new listing</button>
+    </form>
+    <% for(let listing of allListings){%>
+        <li>
+            <a href="/listings/<%= listing._id %>"><%= listing.title %></a>
+        </li>
+        <% }%>
+            </ul>
+</body>
+
+</html>
+<ul>
